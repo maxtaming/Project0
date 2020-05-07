@@ -1,0 +1,128 @@
+body {
+  background-color: #e6fffd;
+}
+
+%header {
+  font-family: Helvetica,Verdana;
+  color: #7066ff;
+}
+
+$dpcolor:#003399;
+
+/*navbar style*/
+.navbar {
+  min-height: 80px;
+}
+
+.navbar-brand {
+  font-family: Brush Script MT;
+  padding-left: 20px;
+}
+/*About Me Style*/
+#imgme {
+  img {
+    float: right;
+  }
+}
+
+#txtme {
+  h1 {
+    @extend %header;
+  }
+
+  p {
+    color: $dpcolor;
+  }
+}
+/*CV*/
+#CV {
+  h1 {
+    @extend %header;
+    text-align: center;
+  }
+
+p{
+  color: $dpcolor;
+}
+
+  #workexp {
+    li {
+      list-style-type: none;
+      text-align: right;
+    }
+  }
+
+  #Education {}
+}
+/*Interest*/
+#interest {
+  h1 {
+    @extend %header;
+    text-align: center;
+  }
+}
+/*Contact form stlye*/
+* {
+  box-sizing: border-box;
+}
+
+#contact {
+  h1 {
+    @extend %header;
+  }
+// Style inputs
+  input[type=text],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    resize: vertical;
+  }
+
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+//Style the container/contact section
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 50px;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  p {
+    position: absolute;
+    bottom: auto;
+  }
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  p {
+    position: absolute;
+    bottom:auto;
+  }
+}
+}

@@ -1,0 +1,80 @@
+body {
+  background-color: #e6fffd; }
+
+#txtme h1, #CV h1, #interest h1, #contact h1 {
+  font-family: Helvetica,Verdana;
+  color: #7066ff; }
+
+/*navbar style*/
+.navbar {
+  min-height: 80px; }
+
+.navbar-brand {
+  font-family: Brush Script MT;
+  padding-left: 20px; }
+
+/*About Me Style*/
+#imgme img {
+  float: right; }
+
+#txtme p {
+  color: #003399; }
+
+/*CV*/
+#CV h1 {
+  text-align: center; }
+#CV p {
+  color: #003399; }
+#CV #workexp li {
+  list-style-type: none;
+  text-align: right; }
+
+/*Interest*/
+#interest h1 {
+  text-align: center; }
+
+/*Contact form stlye*/
+* {
+  box-sizing: border-box; }
+
+#contact input[type=text],
+#contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  resize: vertical; }
+#contact input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer; }
+#contact input[type=submit]:hover {
+  background-color: #45a049; }
+#contact .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 50px; }
+#contact .column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px; }
+#contact .row:after {
+  content: "";
+  display: table;
+  clear: both; }
+#contact p {
+  position: absolute;
+  bottom: auto; }
+@media screen and (max-width: 600px) {
+  #contact .column, #contact input[type=submit] {
+    width: 100%;
+    margin-top: 0; }
+  #contact p {
+    position: absolute;
+    bottom: auto; } }
+
+/*# sourceMappingURL=stylesheet.css.map */
